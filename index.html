@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <title>Interactive Quiz</title>
+</head>
+<body>
+  <!-- top section -->
+  <div class="intro py-3 bg-white text-center">
+    <div class="container">
+      <h2 class="text-primary display-3 my-4">Corona Quizz</h2>
+    </div>
+  </div> 
+
+  <!-- result section -->
+  <div class="result py-4 d-none bg-light text-center">
+    <div class="container lead">
+      <p>You are <span class="text-primary display-4 p-3">0%</span>Correct!!!</p>
+    </div>
+  </div>
+
+  <!-- quiz section -->
+  <div class="quiz py-4 bg-primary">
+    <div class="container">
+      <h2 class="my-5 text-white">On with the Questions...</h2>
+
+      <form class="quiz-form text-light">
+        <div class="my-5">
+          <p class="lead font-weight-normal">1. What is COVID-19?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q1" value="A" checked>
+            <label class="form-check-label">It is the name given to the 2019 novel coronavirus.</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q1" value="B">
+            <label class="form-check-label">A common flu associated with the virus.</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q1" value="C">
+            <label class="form-check-label">It is the name given to the spanish flu.</label>
+          </div>
+        </div>
+
+        <div class="my-5">
+          <p class="lead font-weight-normal">2. Where do coronaviruses come from?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q2" value="A" checked>
+            <label class="form-check-label">They are originated from African country.</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q2" value="B">
+            <label class="form-check-label">The novel coronavirus was detected in China.</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q2" value="C">
+            <label class="form-check-label">It is originated from food market in USA. </label>
+          </div>
+        </div>
+
+        <div class="my-5">
+          <p class="lead font-weight-normal">3. Is this virus comparable to SARS or to the seasonal flu?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q3" value="A" checked>
+            <label class="form-check-label">Yes, it is genetically related to the SARS-CoV-1.</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q3" value="B">
+            <label class="form-check-label">Both COVID-19 and seasonal influenza are transmitted from person-to-person and may cause similar symptoms</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q3" value="C">
+            <label class="form-check-label">Both of them above.</label>
+          </div>
+        </div>
+
+        <div class="my-5">
+          <p class="lead font-weight-normal">4. What is the mode of transmission?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q4" value="A" checked>
+            <label class="form-check-label">Human to human transmission.</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q4" value="B">
+            <label class="form-check-label">Animals to human.</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q4" value="C">
+            <label class="form-check-label">Anything that comes in contact with.</label>
+          </div>
+        </div>
+
+        <div class="my-5">
+          <p class="lead font-weight-normal">5. What are the symptoms of COVID-19 infection</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q5" value="A" checked>
+            <label class="form-check-label">fever, cough, sore throat, general weakness and fatigue and muscular pain.</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q5" value="B">
+            <label class="form-check-label">Vomiting, diarrhoea and common cold.</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q5" value="C">
+            <label class="form-check-label">Loss of apetite, sore throat, muscular pain etc.</label>
+          </div>
+        </div>
+
+        <div class="my-5">
+          <p class="lead font-weight-normal">6. Are some people more at risk than others?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q6" value="A" checked>
+            <label class="form-check-label">Small children under age of 10 years.</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q6" value="B">
+            <label class="form-check-label">Elderly people above 70 years of age and those with underlying health conditions </label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q6" value="C">
+            <label class="form-check-label">Pregnant women and neonates.</label>
+          </div>
+        </div>
+
+        <div class="my-5">
+          <p class="lead font-weight-normal">7.Is there a treatment for the COVID-19 disease? </p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q7" value="A" checked>
+            <label class="form-check-label">Yes but not effective</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q7" value="B">
+            <label class="form-check-label">There is no specific treatment or vaccine for this disease.</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q7" value="C">
+            <label class="form-check-label">Only treatment of symptoms is done.</label>
+          </div>
+        </div>
+
+        <div class="my-5">
+          <p class="lead font-weight-normal">8. How can you avoid getting infected?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q8" value="A" checked>
+            <label class="form-check-label">The virus enters your body via your eyes, nose and/or mouth, so it is important to avoid touching your face with unwashed hands.</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q8" value="B">
+            <label class="form-check-label">Balanced diet and regular exercise</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q8" value="C">
+            <label class="form-check-label">Regular checkups.</label>
+          </div>
+        </div>
+
+        <div class="my-5">
+          <p class="lead font-weight-normal">9. How can you avoid infecting others?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q9" value="A" checked>
+            <label class="form-check-label">Giving a lecture in a huge mass.</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q9" value="B">
+            <label class="form-check-label">Maintaining a physical distance and isolation.</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q9" value="C">
+            <label class="form-check-label">Balanced diet and regular exercise</label>
+          </div>
+        </div>
+
+        <div class="my-5">
+          <p class="lead font-weight-normal">10. Is there a vaccine against the virus currently?</p>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q10" value="A" checked>
+            <label class="form-check-label">Yes but not effective.</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q10" value="B">
+            <label class="form-check-label">There are currently no vaccines against human coronaviruses.</label>
+          </div>
+          <div class="form-check my-2 text-white-50">
+            <input type="radio" name="q10" value="C">
+            <label class="form-check-label">There is no cure at all.</label>
+          </div>
+        </div>
+        <div>
+          <input type="submit" class="btn btn-light">
+        </div>
+      </form>
+    </div>
+  </div>
+  
+  <script src="apps.js"></script>
+</body>
+</html>
